@@ -84,3 +84,30 @@ function logAtMost(n) {
  * Reference types are generally O(n) length of array, number of keys
  */
 
+// O(1)
+function sum(arr) {
+    let total = 0; // 1
+    for (let i = 0; i < arr.length; i++) { // 1
+        total += arr[i];
+    }
+    return total;
+}
+
+// O(n)
+function double(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.lenght; i++) {
+        newArr.push(2 * arr[i]);
+    }
+    return newArr;
+}
+
+// LOGARITHMS
+
+/**
+ * 
+ * log^2(8) = 3
+ * 
+ * log^2(value) = exponent === 2exponent = value
+ * 
+ */
